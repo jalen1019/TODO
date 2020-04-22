@@ -1,0 +1,16 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "This is a test application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^8.2.3"
+  },
+  "dependencies": {
+    "package-lock.json": "^1.0.0",
+    "package.json": "^2.0.1"
+  }
+}
