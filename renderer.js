@@ -7,6 +7,11 @@ var addNoteContainer = document.getElementById("add-note-container");
 // Handlers
 // Add note handler 
 var addNoteHandler = function() {
+    // Check if there is a note currently open
+    if (addNoteContainer.hasChildNodes()) {
+        return;
+    }
+    
     // Define attributes for input tag
     var user_note = document.createElement("user-note");
 
