@@ -6,25 +6,30 @@ class UserNote extends HTMLElement {
         // Define shadow root
         let shadow = this.attachShadow({mode: "closed"});
 
-        // Define custom elements to be attached
-        const user_input_field = document.createElement("input");
-            user_input_field.setAttribute("type", "text");
+        // Define elements to be attached
+        const note_title = document.createElement("input");
+            note_title.setAttribute("type", "text");
+            
+        const note_body = document.createElement("textarea");
+            note_body.setAttribute("autofocus", "true");
 
-        shadow.appendChild(user_input_field);
+        // Attach elements to shadow root 
+        shadow.appendChild(note_title);
+        shadow.appendChild(note_body);
+
+        // Create event handlers
+        note_title.addEventListener("input", this.userInputHandler);
+        note_body.addEventListener("input", this.userInputHandler);
     }
     
-    // Event Handlers
+    // Define custom event handling
+    userInputHandler() {
+        
+    }
     
-    
-    // Utility Methods
+    // Private utility Methods
     toggle() {
-        console.log("Note has been toggled!");
-        if (this.state) {
-            
-        } else {
 
-        }
-        this.state = !this.state;
     }
     
 } customElements.define("user-note", UserNote);
