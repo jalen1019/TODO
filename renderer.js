@@ -1,5 +1,8 @@
 let ipcRenderer = require('electron');
 
+// Element selectors
+var addNote = document.getElementById("add-note");
+
 // Handlers
 // Add note handler 
 var addNoteHandler = function() {
@@ -11,5 +14,4 @@ var addNoteHandler = function() {
 }
 
 // Event listeners
-var addNote = document.getElementById("add-note");
 addNote.addEventListener("click", addNoteHandler, false);
