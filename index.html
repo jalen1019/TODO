@@ -1,14 +1,10 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <title>TODO</title>
-<link rel="stylesheet" href="stylesheet.css">
 
-<h1>TODO</h1>
-<div id="sidebar-container">
-    <button id="add-note" class="sidebar-item">+</button>
-</div>
-<hr class="container-divider">
-<div id="add-note-container"></div>
 
-<!--Make sure to put all javascript sources after HTML has been defined!-->
-<script src="renderer.js"></script>
-<script src="classes.js"></script>
+<!-- Include javascript at end -->
+<script>
+    window.jQuery = window.$ = require("jquery");
+</script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
