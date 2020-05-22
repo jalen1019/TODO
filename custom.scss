@@ -2,7 +2,16 @@
 @import "node_modules/bootstrap/scss/variables";
 
 // Your variable overrides
+$dark: $gray-900;
+$body-bg: $dark;
 
+html, body {
+    height: 100%;
+}
+
+#note-body {
+    resize: none; 
+}
 
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
