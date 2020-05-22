@@ -1,13 +1,15 @@
 const electron = require('electron');
 const { app, BrowserWindow, ipcMain } = require('electron')
 
-function createWindow () {
+let win;
+
+async function createWindow () {
   // Create the browser window.
-  const win = new BrowserWindow({
+  win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: false
+      nodeIntegration: true
     }
   })
 
