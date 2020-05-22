@@ -15,6 +15,13 @@ $spacers: map-merge(
   $spacers
 );
 
+html, body {
+    height: 100%;
+}
+
+#note-body {
+    resize: none; 
+}
 
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
