@@ -1,2 +1,6 @@
 node_modules/*
+<<<<<<< HEAD
 stylesheet.css
+=======
+.vscode/*
+>>>>>>> 89f9a2d... Ignore vscode settings files
