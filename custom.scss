@@ -1,16 +1,24 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
 // Your variable overrides
-$dark: $gray-900;
-$body-bg: $dark;
-
-html, body {
-    height: 100%;
-}
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 6)
+  ),
+  $spacers
+);
 
 #note-body {
     resize: none; 
+    min-height: 85vh;
 }
 
 // Bootstrap and its default variables
