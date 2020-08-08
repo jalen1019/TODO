@@ -1,5 +1,6 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
 // Variable overrides
 $spacers: map-merge(
@@ -21,6 +22,7 @@ html, body {
 
 #note-body {
     resize: none; 
+    min-height: 85vh;
 }
 
 // Bootstrap and its default variables
