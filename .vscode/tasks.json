@@ -6,7 +6,7 @@
         {
             "label": "sass",
             "type": "shell",
-            "command": "sass custom.scss > stylesheet.css"
-        }
+            "command": "powershell -ExecutionPolicy Bypass -File 'C:\\Program Files\\nodejs\\sass.ps1' custom.scss > stylesheet.css"
+        },
     ]
 }
