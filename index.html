@@ -3,9 +3,21 @@
 <title>TODO</title>
 
 <div class="container-fluid">
-    <div class="input-group-md">
-        <input type="text" class="form-control py-auto my-3" id="note-header" placeholder="Note Title">
-        <textarea class="form-control" id="note-body" placeholder="Write your note here..."></textarea>
+    <div class="row">
+        <div class="col-1 mr-3"></div>
+        <div class="col mr-3">
+            <div class="input-group-md">
+                <div class="row">
+                    <input type="text" class="form-control py-auto my-3" id="note-header" placeholder="Note Title">
+                </div>
+                <div class="row">
+                    <textarea class="form-control mb-3" id="note-body" placeholder="Write your note here..."></textarea>
+                </div>
+                <div class="row justify-content-end">
+                    <button id="submit-button" type="button" class="btn btn-secondary btn-md mr-3" disabled>Submit</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
